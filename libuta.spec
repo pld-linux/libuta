@@ -2,7 +2,7 @@ Summary:	libuta - a C++ multimedia framework
 Summary(pl):	libuta - ¶rodowisko multimedialne do C++
 Name:		libuta
 Version:	0.4.1
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries
 Source0:	ftp://victor.worldforge.org/pub/worldforge/libs/libuta/%{name}-%{version}.tar.gz
@@ -46,6 +46,10 @@ This package contains the header files needed to develop programs that
 use these libuta.
 
 %description -l pl
+libuta jest bibliotek± C++ daj±c± ¶rodowisko do tworzenia aplikacji
+multimedialnych, zw³aszcza gier. Opiera siê na SDL i jest dostêpna pod
+Win32 i Linuksa/X11.
+
 Ten pakiet zawiera pliki nag³ówkowe potrzebne do tworzenia programów z
 u¿yciem biblioteki libuta.
 
@@ -63,6 +67,10 @@ is available for Win32 and Linux/X11.
 This package contains the static libuta.
 
 %description static -l pl
+libuta jest bibliotek± C++ daj±c± ¶rodowisko do tworzenia aplikacji
+multimedialnych, zw³aszcza gier. Opiera siê na SDL i jest dostêpna pod
+Win32 i Linuksa/X11.
+
 Ten pakiet zawiera statyczn± bibliotekê libuta.
 
 %prep
