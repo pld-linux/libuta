@@ -77,9 +77,10 @@ Ten pakiet zawiera statyczn± bibliotekê libuta.
 %setup -q
 
 %build
+rm -f missing
 %{__libtoolize}
-aclocal
-autoheader
+%{__aclocal}
+%{__autoheader}
 %{__autoconf}
 %{__automake}
 %configure
