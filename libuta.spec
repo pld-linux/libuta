@@ -7,6 +7,7 @@ License:	LGPL
 Group:		Libraries
 Source0:	ftp://victor.worldforge.org/pub/worldforge/libs/libuta/%{name}-%{version}.tar.gz
 # Source0-md5:	06607ef03d84d607d4a1a1592f815eaf
+Patch0:		%{name}-missing_assert_h.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -76,6 +77,7 @@ Ten pakiet zawiera statyczn± bibliotekê libuta.
 
 %prep
 %setup -q
+%patch0
 
 %build
 rm -f missing
@@ -90,7 +92,8 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT

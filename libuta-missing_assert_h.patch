@@ -1,0 +1,10 @@
+--- uta/painter.h.orig	2003-11-02 18:54:52.000000000 +0000
++++ uta/painter.h	2003-11-02 18:54:55.000000000 +0000
+@@ -22,6 +22,7 @@
+ #ifndef _PAINTER_H_
+ #define _PAINTER_H_
+ 
++#include <assert.h>
+ #include "surface.h"
+ 
+ 
