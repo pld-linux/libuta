@@ -22,6 +22,7 @@ BuildRequires:	smpeg-devel
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	libpng-devel
 BuildRequires:	freetype1-devel
+BuildRequires:	libvorbis-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -92,11 +93,11 @@ Ten pakiet zawiera statyczn± bibliotekê libuta.
 %setup -q
 
 %build
+libtoolize --copy --force
 aclocal
 autoheader
-libtoolize --automake --copy --force
-automake --add-missing --copy --gnu --force
 autoconf
+automake -a -c
 %configure
 %{__make}
 
