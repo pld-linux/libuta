@@ -1,4 +1,5 @@
 Summary:	libuta - a C++ multimedia framework
+Summary(pl):	libuta - ¶rodowisko multimedialne do C++
 Name:		libuta
 Version:	0.4.0
 Release:	1
@@ -28,8 +29,14 @@ libuta is C++ library which provides a framework for creating
 multimedia applications, especially games. It runs on top of SDL and
 is available for Win32 and Linux/X11.
 
+%description -l pl
+libuta jest bibliotek± C++ daj±c± ¶rodowisko do tworzenia aplikacji
+multimedialnych, zw³aszcza gier. Opiera siê na SDL i jest dostêpna pod
+Win32 i Linuksa/X11.
+
 %package devel
-Summary:	Header files and libraries for libuta development
+Summary:	Header files for libuta development
+Summary(pl):	Pliki nag³ówkowe do tworzenia programów z u¿yciem libuta
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
 Group(es):	Desarrollo/Bibliotecas
@@ -54,8 +61,13 @@ is available for Win32 and Linux/X11.
 This package contains the header files needed to develop programs that
 use these libuta.
 
+%description -l pl
+Ten pakiet zawiera pliki nag³ówkowe potrzebne do tworzenia programów z
+u¿yciem biblioteki libuta.
+
 %package static
 Summary:	Static libraries for libuta development
+Summary(pl):	Statyczne biblioteki libuta
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
 Group(es):	Desarrollo/Bibliotecas
@@ -72,6 +84,9 @@ multimedia applications, especially games. It runs on top of SDL and
 is available for Win32 and Linux/X11.
 
 This package contains the static libuta.
+
+%description static -l pl
+Ten pakiet zawiera statyczn± bibliotekê libuta.
 
 %prep
 %setup -q
@@ -95,10 +110,12 @@ gzip -9nf AUTHORS BUGS ChangeLog README TODO
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post	-p /sbin/ldconfig
+%postun -p /sbin/ldconfig
+
 %files
 %defattr(644,root,root,755)
 %doc *.gz
-%{_libdir}/lib*.so.0
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
 %files devel
