@@ -46,7 +46,7 @@ is available for Win32 and Linux/X11.
 This package contains the header files needed to develop programs that
 use these libuta.
 
-%description -l pl
+%description devel -l pl
 libuta jest bibliotek± C++ daj±c± ¶rodowisko do tworzenia aplikacji
 multimedialnych, zw³aszcza gier. Opiera siê na SDL i jest dostêpna pod
 Win32 i Linuksa/X11.
