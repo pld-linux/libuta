@@ -1,8 +1,8 @@
 Summary:	libuta - a C++ multimedia framework
 Summary(pl):	libuta - ¶rodowisko multimedialne do C++
 Name:		libuta
-Version:	0.4.1
-Release:	2
+Version:	0.4.3
+Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	ftp://victor.worldforge.org/pub/worldforge/libs/libuta/%{name}-%{version}.tar.gz
@@ -13,7 +13,7 @@ BuildRequires:	smpeg-devel
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	libpng-devel
 BuildRequires:	freetype1-devel
-BuildRequires:	libsigc++-devel
+BuildRequires:	libsigc++1-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,7 +35,7 @@ Requires:	smpeg-devel
 Requires:	SDL_mixer-devel
 Requires:	libpng-devel
 Requires:	freetype1-devel
-Requires:	libsigc++-devel
+Requires:	libsigc++1-devel
 
 %description devel
 libuta is C++ library which provides a framework for creating
