@@ -1,7 +1,7 @@
 Summary:	libuta - a C++ multimedia framework
 Summary(pl):	libuta - ¶rodowisko multimedialne do C++
 Name:		libuta
-Version:	0.4.3
+Version:	0.4.4
 Release:	1
 License:	LGPL
 Group:		Libraries
