@@ -6,6 +6,7 @@ Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	ftp://victor.worldforge.org/pub/worldforge/libs/libuta/%{name}-%{version}.tar.gz
+# Source0-md5:	06607ef03d84d607d4a1a1592f815eaf
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
