@@ -1,7 +1,7 @@
 Summary:	libuta - a C++ multimedia framework
 Summary(pl):	libuta - ¶rodowisko multimedialne do C++
 Name:		libuta
-Version:	0.4.0
+Version:	0.4.1
 Release:	1
 License:	LGPL
 Group:		Libraries
@@ -9,13 +9,11 @@ Source0:	ftp://victor.worldforge.org/pub/worldforge/libs/libuta/%{name}-%{versio
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
-BuildRequires:	Atlas-C++-devel
-BuildRequires:	varconf-devel
 BuildRequires:	smpeg-devel
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	libpng-devel
 BuildRequires:	freetype1-devel
-BuildRequires:	libvorbis-devel
+BuildRequires:	libsigc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,12 +31,11 @@ Summary:	Header files for libuta development
 Summary(pl):	Pliki nag³ówkowe do tworzenia programów z u¿yciem libuta
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
-Requires:	Atlas-C++-devel
-Requires:	varconf-devel
 Requires:	smpeg-devel
 Requires:	SDL_mixer-devel
 Requires:	libpng-devel
 Requires:	freetype1-devel
+Requires:	libsigc++-devel
 
 %description devel
 libuta is C++ library which provides a framework for creating
@@ -85,8 +82,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf AUTHORS BUGS ChangeLog README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -95,7 +90,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS BUGS ChangeLog README TODO
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
 %files devel
