@@ -72,7 +72,7 @@ Ten pakiet zawiera statyczn± bibliotekê libuta.
 %setup -q
 
 %build
-libtoolize --copy --force
+%{__libtoolize}
 aclocal
 autoheader
 %{__autoconf}
