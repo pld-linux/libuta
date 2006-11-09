@@ -1,0 +1,4 @@
+- updated to 0.4.1
+- new %doc
+- removed BuildRequires: Atlas-C++-devel, varconf-devel, libvorbis-devel
+  (also Requires from devel), added libsigc++-devel
