@@ -1,0 +1,3 @@
+- updated to 0.4.3
+- BuildRequires: libsigc++1-devel instead libsigc++-devel
+  STBR
