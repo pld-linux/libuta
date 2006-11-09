@@ -32,7 +32,7 @@ Win32 i Linuksa/X11.
 Summary:	Header files for libuta development
 Summary(pl):	Pliki nag³ówkowe do tworzenia programów z u¿yciem libuta
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	smpeg-devel
 Requires:	SDL_mixer-devel
 Requires:	libpng-devel
@@ -59,7 +59,7 @@ u¿yciem biblioteki libuta.
 Summary:	Static libraries for libuta development
 Summary(pl):	Statyczne biblioteki libuta
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 libuta is C++ library which provides a framework for creating
