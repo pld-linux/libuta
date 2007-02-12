@@ -1,5 +1,5 @@
 Summary:	libuta - a C++ multimedia framework
-Summary(pl):	libuta - ¶rodowisko multimedialne do C++
+Summary(pl.UTF-8):   libuta - Å›rodowisko multimedialne do C++
 Name:		libuta
 Version:	0.4.4
 Release:	1
@@ -23,14 +23,14 @@ libuta is C++ library which provides a framework for creating
 multimedia applications, especially games. It runs on top of SDL and
 is available for Win32 and Linux/X11.
 
-%description -l pl
-libuta jest bibliotek± C++ daj±c± ¶rodowisko do tworzenia aplikacji
-multimedialnych, zw³aszcza gier. Opiera siê na SDL i jest dostêpna pod
+%description -l pl.UTF-8
+libuta jest bibliotekÄ… C++ dajÄ…cÄ… Å›rodowisko do tworzenia aplikacji
+multimedialnych, zwÅ‚aszcza gier. Opiera siÄ™ na SDL i jest dostÄ™pna pod
 Win32 i Linuksa/X11.
 
 %package devel
 Summary:	Header files for libuta development
-Summary(pl):	Pliki nag³ówkowe do tworzenia programów z u¿yciem libuta
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe do tworzenia programÃ³w z uÅ¼yciem libuta
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	smpeg-devel
@@ -47,17 +47,17 @@ is available for Win32 and Linux/X11.
 This package contains the header files needed to develop programs that
 use these libuta.
 
-%description devel -l pl
-libuta jest bibliotek± C++ daj±c± ¶rodowisko do tworzenia aplikacji
-multimedialnych, zw³aszcza gier. Opiera siê na SDL i jest dostêpna pod
+%description devel -l pl.UTF-8
+libuta jest bibliotekÄ… C++ dajÄ…cÄ… Å›rodowisko do tworzenia aplikacji
+multimedialnych, zwÅ‚aszcza gier. Opiera siÄ™ na SDL i jest dostÄ™pna pod
 Win32 i Linuksa/X11.
 
-Ten pakiet zawiera pliki nag³ówkowe potrzebne do tworzenia programów z
-u¿yciem biblioteki libuta.
+Ten pakiet zawiera pliki nagÅ‚Ã³wkowe potrzebne do tworzenia programÃ³w z
+uÅ¼yciem biblioteki libuta.
 
 %package static
 Summary:	Static libraries for libuta development
-Summary(pl):	Statyczne biblioteki libuta
+Summary(pl.UTF-8):   Statyczne biblioteki libuta
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -68,12 +68,12 @@ is available for Win32 and Linux/X11.
 
 This package contains the static libuta.
 
-%description static -l pl
-libuta jest bibliotek± C++ daj±c± ¶rodowisko do tworzenia aplikacji
-multimedialnych, zw³aszcza gier. Opiera siê na SDL i jest dostêpna pod
+%description static -l pl.UTF-8
+libuta jest bibliotekÄ… C++ dajÄ…cÄ… Å›rodowisko do tworzenia aplikacji
+multimedialnych, zwÅ‚aszcza gier. Opiera siÄ™ na SDL i jest dostÄ™pna pod
 Win32 i Linuksa/X11.
 
-Ten pakiet zawiera statyczn± bibliotekê libuta.
+Ten pakiet zawiera statycznÄ… bibliotekÄ™ libuta.
 
 %prep
 %setup -q
