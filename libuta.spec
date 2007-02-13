@@ -1,5 +1,5 @@
 Summary:	libuta - a C++ multimedia framework
-Summary(pl.UTF-8):   libuta - środowisko multimedialne do C++
+Summary(pl.UTF-8):	libuta - środowisko multimedialne do C++
 Name:		libuta
 Version:	0.4.4
 Release:	1
@@ -30,7 +30,7 @@ Win32 i Linuksa/X11.
 
 %package devel
 Summary:	Header files for libuta development
-Summary(pl.UTF-8):   Pliki nagłówkowe do tworzenia programów z użyciem libuta
+Summary(pl.UTF-8):	Pliki nagłówkowe do tworzenia programów z użyciem libuta
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	smpeg-devel
@@ -57,7 +57,7 @@ użyciem biblioteki libuta.
 
 %package static
 Summary:	Static libraries for libuta development
-Summary(pl.UTF-8):   Statyczne biblioteki libuta
+Summary(pl.UTF-8):	Statyczne biblioteki libuta
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
