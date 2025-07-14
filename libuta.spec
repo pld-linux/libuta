@@ -77,7 +77,7 @@ Ten pakiet zawiera statyczną bibliotekę libuta.
 
 %prep
 %setup -q
-%patch0
+%patch -P0
 
 %build
 rm -f missing
